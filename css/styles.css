@@ -1,0 +1,57 @@
+@import 'variables.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fontMain);
+    color: var(--colorMain);
+    background-color: var(--colorBgMain);
+}
+
+nav{
+    ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1rem;
+        li{
+            list-style: none;  
+        }
+    }
+}
+
+a{
+    color: var(--colorSecondary);
+    text-decoration: none;
+    &:hover{
+    font-weight: bold;
+}
+}
+
+main{
+    margin: 1rem;
+}
+
+header{
+    color: var(--colorMain);
+    h1{
+        font-family: var(--fontTitle)
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--colorMain);
+    color: white;
+}
+
+header, footer{
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
