@@ -19,11 +19,11 @@ document.querySelector("#cd-form").addEventListener("submit", (e) => {
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
+    document.querySelector("#delete-output").appendChild(deleteButton);    
     deleteButton.addEventListener("click", () => {
         authorP.remove();
         titleP.remove();
         yearP.remove();
         deleteButton.remove();
     });
-    document.querySelector("#delete-output").appendChild(deleteButton);    
 });
